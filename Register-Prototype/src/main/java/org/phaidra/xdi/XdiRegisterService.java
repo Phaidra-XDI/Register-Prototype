@@ -32,7 +32,7 @@ public class XdiRegisterService {
 		for (String identifier : identifiers) {
 
 			statements.add(XDIStatement.create("*!(" + identifier + ")/$ref/*!(" + phaidraIdentifier + ")"));
-			statements.add(XDIStatement.create("*!(" + phaidraIdentifier + ")/$is/*!(" + identifier + ")"));
+			statements.add(XDIStatement.create("*!(" + phaidraIdentifier + ")/$is$ref/*!(" + identifier + ")"));
 		}
 
 		m.createSetOperation(statements.iterator());
