@@ -20,7 +20,7 @@ public class XdiRegisterService {
 		this.xdiEndpointUri = xdiEndpointUri;
 	}
 
-	public void setIdentifiers(String phaidraIdentifier, String[] identifiers) throws Xdi2ClientException {
+	public void register(String phaidraIdentifier, String[] identifiers) throws Xdi2ClientException {
 
 		XDIClient client = new XDIHttpClient(this.getXdiEndpointUri());
 

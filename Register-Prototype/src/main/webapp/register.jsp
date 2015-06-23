@@ -9,8 +9,6 @@
 
 <body>
 
-<img src="phaidra.png" style="width: 200px; padding-right: 50px;">
-
 <h1>Phaidra XDI Registration Service</h1>
 
 	<% if (request.getAttribute("feedback") != null) { %>
@@ -30,7 +28,7 @@
 <table>
 <tr>
   <td>XDI Registry Server:</td>
-  <td><input type="text" name="xdiEndpointUri" value="http://localhost:8080/xdi/mem-graph" class="topcoat-text-input--large text"></td>
+  <td><input type="text" name="xdiEndpointUri" value="http://localhost:8080/mem-graph" class="topcoat-text-input--large text"></td>
 </tr>
 </table>
 

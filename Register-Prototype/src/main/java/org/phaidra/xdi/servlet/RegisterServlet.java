@@ -46,7 +46,7 @@ public class RegisterServlet extends javax.servlet.http.HttpServlet implements j
 
 		try {
 
-			service.setIdentifiers(phaidraIdentifier, identifiers);
+			service.register(phaidraIdentifier, identifiers);
 			request.setAttribute("feedback", "Success!");
 		} catch (Xdi2ClientException ex) {
 
